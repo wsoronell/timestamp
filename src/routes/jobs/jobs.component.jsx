@@ -1,12 +1,22 @@
-// import stuff here
+import {Fragment, useEffect, useState} from 'react';
+import {JobPanelContainer} from './jobs.styles';
+import Dropdown from '../../components/dropdown/dropdown.component';
+import DropdownItem from '../../components/dropdown-item/dropdown-item.component';
+import ShiftActions from '../../components/shift-actions/shift-actions.component';
+import JobActions from '../../components/job-actions/job-actions.component';
 
 function JobPanel() {
     // code business logic here
 
     return (
-        <div id="job-panel-container">
+        <JobPanelContainer>
             JobPanel Page
-        </div>
+           <Dropdown>
+                <DropdownItem />
+            </Dropdown>
+            <ShiftActions />
+            <JobActions />
+        </JobPanelContainer>
     )
 }
 

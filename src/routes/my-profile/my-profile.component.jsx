@@ -1,12 +1,12 @@
-// import stuff here
+import {MyProfileContainer} from './my-profile.styles'
 
 function MyProfile() {
     // code business logic here
 
     return (
-        <div id="my-profile-container">
+        <MyProfileContainer>
             MyProfile Page
-        </div>
+        </MyProfileContainer>
     )
 }
 

@@ -6,6 +6,7 @@ import QuickPeek from './routes/quick-peek/quick-peek.component';
 import Authentication from './routes/authentication/authentication.component';
 import JobPanel from './routes/jobs/jobs.component';
 import Analytics from './routes/analytics/analytics.component';
+import MyProfile from './routes/my-profile/my-profile.component';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path='auth' element={<Authentication/>} />
         <Route path='job/*' element={<JobPanel />} />
         <Route path='analytics' element={<Analytics />} />
+        <Route path='profile' element={<MyProfile />} />
       </Route>
     </Routes>
   );
